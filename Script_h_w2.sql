@@ -1,7 +1,7 @@
---Cоздать таблицу employees
+--CРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ employees
 -- id. serial,  primary key
 -- employee_name. Varchar(50), not null
---Наполнить таблицу employee 70 строками.
+--РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ employee 70 СЃС‚СЂРѕРєР°РјРё.
 create  table salary(
 id serial primary key,
 monthly_salary int not null
@@ -232,12 +232,12 @@ insert into employees (id, employee_name)
 values (default, 'Christopher Mobby');
 
 
---Таблица salary
+--РўР°Р±Р»РёС†Р° salary
 
---Создать таблицу salary
+--РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ salary
 -- id. Serial  primary key,
 -- monthly_salary. Int, not null
---Наполнить таблицу salary 15 строками:
+--РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ salary 15 СЃС‚СЂРѕРєР°РјРё:
 
 create table salary (
 id serial primary key,
@@ -277,9 +277,9 @@ values (default ,2400);
 insert into salary (id, monthly_salary)
 values (default ,2500);
 
---Таблица employee_salary
+--РўР°Р±Р»РёС†Р° employee_salary
 
---Создать таблицу employee_salary
+--РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ employee_salary
 --id. Serial  primary key,
 -- employee_id. Int, not null, unique
 --salary_id. Int, not null
@@ -289,8 +289,8 @@ id serial primary key,
 employee_id int not null unique,
 salary_id int not null
 );
---Наполнить таблицу employee_salary 40 строками:
--- в 10 строк из 40 вставить несуществующие employee_id
+--РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ employee_salary 40 СЃС‚СЂРѕРєР°РјРё:
+-- РІ 10 СЃС‚СЂРѕРє РёР· 40 РІСЃС‚Р°РІРёС‚СЊ РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ employee_id
 insert into employee_salary (id, employee_id, salary_id)
 values (default,  6 ,  2 );
 insert into employee_salary (id, employee_id, salary_id)
@@ -511,34 +511,3 @@ insert into roles_employee (id, employee_id, role_id)
 values (default , 41,14);
 insert into roles_employee (id, employee_id, role_id)
 values (default , 69,18);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
